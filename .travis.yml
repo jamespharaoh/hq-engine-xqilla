@@ -4,4 +4,4 @@ rvm:
   - 2.0.0
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq libxqilla-dev
+  - sudo apt-get install -qq libjsoncpp-dev libxqilla-dev
