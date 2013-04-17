@@ -1,7 +1,12 @@
 require "rspec/core/rake_task"
 require "cucumber/rake/task"
 
-task :default => [ :spec, :features ]
+task :default => [ :build, :spec, :features ]
+
+desc "Build binary components"
+task :build do
+	system "rake -f src/Rakefile" or exit 1
+end
 
 desc "Run specs"
 RSpec::Core::RakeTask.new :spec do

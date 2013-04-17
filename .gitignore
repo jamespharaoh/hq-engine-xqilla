@@ -4,3 +4,5 @@
 /*.gem
 /results
 /vendor
+/src/xquery-server
+/src/*.o
