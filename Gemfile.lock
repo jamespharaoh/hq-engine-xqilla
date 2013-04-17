@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hq-engine-xqilla (0.0.2)
+    hq-engine-xqilla (0.0.3)
       hq-engine (>= 0.0.3)
 
 GEM
