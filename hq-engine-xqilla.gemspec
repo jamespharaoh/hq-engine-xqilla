@@ -3,27 +3,23 @@
 $hq_project_path =
 	File.expand_path "..", __FILE__
 
-def hq_project_param name
-	File.read("#{$hq_project_path}/.hq-dev/#{name}").strip
+module ::HQ
+	def self.project_param name
+		File.read("#{$hq_project_path}/.hq-dev/#{name}").strip
+	end
 end
 
 $hq_project_name =
-	hq_project_param "name"
+	HQ.project_param "name"
 
 $hq_project_ver =
-	hq_project_param "version"
+	HQ.project_param "version"
 
 $hq_project_full =
-	hq_project_param "full-name"
+	HQ.project_param "full-name"
 
 $hq_project_desc =
-	hq_project_param "description"
-
-$hq_project_dir =
-	File.expand_path "..", __FILE__
-
-$LOAD_PATH.unshift "#{$hq_project_dir}/ruby" \
-	unless $LOAD_PATH.include? "#{$hq_project_dir}/ruby"
+	HQ.project_param "description"
 
 Gem::Specification.new do
 	|spec|
