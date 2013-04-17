@@ -35,7 +35,7 @@ Gem::Specification.new do
 
 	spec.extensions = [ "src/Rakefile" ]
 
-	spec.add_dependency "hq-engine", "0.0.2"
+	spec.add_dependency "hq-engine", ">= 0.0.3"
 
 	spec.add_development_dependency "capybara", ">= 2.0.2"
 	spec.add_development_dependency "cucumber", ">= 1.2.1"
