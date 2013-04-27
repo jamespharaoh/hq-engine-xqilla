@@ -39,11 +39,11 @@ Gem::Specification.new do
 	spec.extensions = [ "src/Rakefile" ]
 
 	spec.add_dependency "hq-engine", ">= 0.0.3"
+	spec.add_dependency "rake", ">= 10.0.3"
 
 	spec.add_development_dependency "capybara", ">= 2.0.2"
 	spec.add_development_dependency "cucumber", ">= 1.2.1"
 	spec.add_development_dependency "libxml-ruby", ">= 2.6.0"
-	spec.add_development_dependency "rake", ">= 10.0.3"
 	spec.add_development_dependency "rspec", ">= 2.12.0"
 	spec.add_development_dependency "rspec_junit_formatter"
 	spec.add_development_dependency "simplecov"
